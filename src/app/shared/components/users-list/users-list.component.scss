@@ -1,6 +1,18 @@
 
 @import'../../../../styles/variables.scss';
 
+.main{
+  overflow-x: auto;
+
+  .row{
+    flex-wrap: nowrap;
+    margin: 0;
+    padding: 0;
+
+
+  }
+}
+
 .account-holder{
 
   .img-container{
@@ -117,4 +129,31 @@
     }
   }
 
+}
+
+@media (max-width: 1199px) {
+
+  .account-holder{
+
+    .img-container{
+
+      .img-div{
+        height: 42px;
+
+      }
+    }
+
+    p{
+      text-align: center;
+      margin-top: 8px;
+      font-size: 11px;
+    }
+  }
+
+  .row{
+
+    .col{
+      padding: 5px;
+    }
+  }
 }

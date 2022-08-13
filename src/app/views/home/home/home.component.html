@@ -4,7 +4,7 @@
   <div class="liner"></div> <!-- To draw a custom line-->
 
   <div class="row filter-row">
-    <div class="col-7">
+    <div class="col-lg-5  col-12">
       <p>Feeds</p>
     </div>
 
@@ -15,7 +15,7 @@
   </div>
 
   <div class="row feeds-row">
-    <div class="col-6 feed-col" *ngFor="let feed of feedsList">
+    <div class="col-xl-6 col-12 feed-col" *ngFor="let feed of feedsList">
       <app-feeds-card [feedObject]="feed"></app-feeds-card>
     </div>
   </div>

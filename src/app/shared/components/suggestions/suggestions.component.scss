@@ -56,7 +56,6 @@
 .suggestions-wrapper{
   padding: 0 12px;
   margin-top: 25px;
-
 }
 
 .suggestions-text-row{
@@ -165,4 +164,123 @@
     }
   }
 
+}
+
+@media (max-width: 1199px) {
+
+
+  .main{
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .search-col{
+
+    input{
+      padding: 15px;
+      padding-left: 40%;
+    }
+  }
+
+  .notification-col {
+    margin-top: 7px;
+    justify-content: space-evenly;
+    padding: 0;
+
+    div{
+      height: 59px;
+      width: 24%;
+    }
+  }
+
+  .suggestions-wrapper{
+
+    .suggestion-col, .see-all-col{
+      font-size: 12px;
+    }
+  }
+
+  .search-col{
+    mat-icon{
+      right: 17%;
+    }
+  }
+}
+
+
+@media (max-width: 999px) {
+
+  .main{
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .search-col{
+
+    input{
+      padding: 15px;
+      padding-left: 40%;
+    }
+  }
+
+  .notification-col {
+    margin-top: 7px;
+    justify-content: space-evenly;
+    padding: 0;
+
+    div{
+      height: 46px;
+      width: 24%;
+    }
+  }
+
+  .suggestions-wrapper{
+
+    .suggestion-col, .see-all-col{
+      font-size: 12px;
+    }
+  }
+
+}
+
+@media (max-width: 760px) {
+
+  .main{
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .search-col{
+    input{
+      padding: 15px;
+      padding-left: 40%;
+    }
+  }
+
+  .notification-col {
+    margin-top: 7px;
+    justify-content: space-evenly;
+    padding: 0;
+
+    div{
+      height: 46px;
+      width: 32%;
+    }
+  }
+
+  .suggestions-wrapper{
+
+    .suggestion-col, .see-all-col{
+      font-size: 12px;
+    }
+  }
+
+}
+
+@media (max-width: 609px) {
+  .search-col{
+    mat-icon{
+      display: none;
+    }
+  }
 }

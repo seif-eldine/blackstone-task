@@ -1,15 +1,16 @@
 <div class="container-fluid">
   <div class="main">
     <div class="row">
-      <div class="col-2">
+      <div class="col-xl-2 col">
         <app-sidebar></app-sidebar>
       </div>
 
-      <div class="col-7">
+      <div class="col-xl-7 col-xs-8 col-6">
         <router-outlet></router-outlet>
       </div>
 
-      <div class="col">
+      <!-- <div class="col"> -->
+      <div class="d-none d-sm-block col suggestions-col">
         <app-suggestions></app-suggestions>
       </div>
 

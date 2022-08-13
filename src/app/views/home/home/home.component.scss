@@ -43,3 +43,31 @@
   background-color: $greyColor;
   margin: 20px 0;
 }
+
+// MEDIA QUERY
+
+@media (max-width: 1199px) {
+
+  .filter-option{
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 555px) {
+
+  .filter-option{
+    text-align: center!important;
+    font-size: 11px;
+    padding: 0px;
+    margin-right: 2px;
+  }
+
+  .feeds-row{
+
+    .feed-col{
+      padding: 12px;
+    }
+  }
+}
+
+

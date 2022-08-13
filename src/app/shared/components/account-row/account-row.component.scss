@@ -89,4 +89,43 @@
   .follow-btn{
     padding: 3px 8px;
   }
+
+  .name-and-tag-col{
+    div{
+      padding-left: 8px;
+    }
+  }
 }
+
+@media (max-width: 1199px) {
+
+
+  .row {
+    margin-bottom: 27px;
+
+    .img-col {
+      img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        object-fit: cover;
+      }
+    }
+  }
+
+
+
+  .follow-btn{
+    padding: 3px 8px;
+    font-size: 12px;
+  }
+
+  .btn-col{
+    text-align: center;
+
+    button{
+      padding: 3px 37%;
+    }
+  }
+}
+
