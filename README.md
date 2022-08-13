@@ -27,8 +27,6 @@ which also includes the needed files like `models` and `services`.
 
 # TODOS
 
-- A design for the mobile devices view.
-
 - Authentication and Authorization.
 
 - If the application serves a considerable audience, better details should be given for SEO.
