@@ -34,7 +34,6 @@ export class AccountRowComponent implements OnInit {
   followChecker() {
     // Checks if a user is followed in localstorage
     if (localStorage.getItem(`user${this.account.id}`)) {
-      console.log("found user :", localStorage.getItem(`user${this.account.id}`), 'id is :', this.account.id)
       this.userFollowed = true;
       return true;
     } else {

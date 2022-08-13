@@ -36,7 +36,6 @@ export class HomeComponent implements OnInit, OnDestroy {
 
   getFeeds(){
     this.feedsService.fetchFeeds(this.currentFilter).then((res: any) => {
-      console.log("Promise results in home", res)
       this.feedsList = res
     })
   }

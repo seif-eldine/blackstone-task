@@ -98,25 +98,21 @@ export class FeedsService {
     if (filter === 'following') {
 
       filteredArr = this.feedsList.filter(obj => obj.following === true)
-      console.log('filtered array following', filteredArr)
 
     } else if (filter === 'popular') {
 
       filteredArr = this.feedsList.sort(function(a, b) {
         return b.likes - a.likes
       })
-      console.log('filtered array popular', filteredArr)
 
     } else if (filter === 'newest') {
 
       filteredArr = this.feedsList.sort(function(a, b){
         return new Date(b.date).valueOf() - new Date(a.date).valueOf();
       });
-      console.log('filtered array newest', filteredArr)
 
     } else {
       filteredArr = this.feedsList
-      console.log('filtered array all', filteredArr)
     }
 
     return new Promise((resolve, reject) => {
