@@ -1,0 +1,90 @@
+@import'../../../../styles/variables.scss';
+
+.img-container {
+  padding: 5px;
+  background-color: white;
+  border-radius: 12px;
+
+  img {
+    width: 100%;
+    border-radius: 12px;
+    height: 220px;
+  }
+}
+
+.info-row{
+  margin-top: 20px;
+}
+
+.img-name-col {
+  img {
+    margin-right: 6%;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.right-data{
+  text-align: right;
+
+  .row{
+    color: $greyColor;
+
+    .col{
+      display: flex;
+      justify-content: end;
+
+      span{
+        margin-left: 12%;
+      }
+    }
+  }
+
+  mat-icon{
+    cursor: pointer;
+  }
+
+  .liked{
+    color: $favoredRed;
+  }
+}
+
+.img-col{
+  text-align: right;
+}
+
+// MEDIA QEURIES
+
+@media (max-width: 1791px){
+
+}
+
+
+@media (max-width: 1679px){
+
+}
+
+@media (max-width: 1535px) {
+
+}
+
+
+@media (max-width: 1439px) {
+  .img-name-col{
+    span{
+      font-size: 14px;
+    }
+  }
+}
+
+@media (max-width: 1367px) {
+
+  .img-name-col{
+    span{
+      font-size: 13px;
+    }
+  }
+
+}

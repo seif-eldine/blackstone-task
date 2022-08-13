@@ -1,0 +1,86 @@
+@import'../../../../styles/variables.scss';
+
+.main{
+  background-color: white;
+  height: 100%;
+  padding-left: 5%;
+
+  *{
+    font-weight: bold;
+  }
+}
+
+p{
+  margin: 0;
+}
+
+.brand{
+  margin-bottom: 30px;
+
+  .img-col{
+    text-align: end;
+
+    img{
+      width: 100%;
+      border-radius: 50%;
+      box-shadow: -14px 10px 23px -11px rgb(0 0 0 / 75%);
+    }
+  }
+
+  .text-col{
+    align-items: center;
+    display: flex;
+
+    p{
+      font-size: 21px;
+    }
+
+    span{
+      text-decoration: underline;
+    }
+  }
+
+}
+
+.menu-title{
+  padding: 33px 0;
+}
+
+.links-holder{
+
+  ul{
+    list-style: none;
+    padding: 0;
+  }
+
+  .icon-text-holder{
+
+    a{
+      cursor: pointer;
+      display: flex;
+      padding: 20px 0;
+      color: $greyColor;
+      text-decoration: none;
+
+      span{
+        margin-left: 20px;
+      }
+
+      &:hover{
+       box-shadow: 0px 5px 7px -9px rgb(0 0 0 / 75%);
+      }
+    }
+  }
+
+
+}
+
+
+.active{
+    color: $cofeedColor!important;
+    box-shadow: 0px 5px 7px -9px rgb(0 0 0 / 75%);
+
+    span{
+      color: black;
+    }
+}

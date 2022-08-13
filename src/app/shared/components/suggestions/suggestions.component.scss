@@ -1,0 +1,173 @@
+@import'../../../../styles/variables.scss';
+
+.main{
+  border-left: 2px solid $greyColor;
+  height: 100%;
+  padding: 0 25px;
+
+}
+
+.search-col{
+
+  input{
+    padding: 20px;
+    padding-left: 40%;
+    border-radius: 40px;
+    width: 100%;
+    color: $greyColor;
+    border: 2px solid $greyColor;
+    outline-color: $greyColor;
+  }
+
+  mat-icon{
+    position: absolute;
+    top: 30px;
+    right: 20%;
+    font-size: 34px;
+    color: $greyColor;
+  }
+}
+
+.notification-col{
+  display: flex;
+  justify-content: space-around;
+
+  div{
+    border-radius: 50%;
+    width: 80px;
+    background-color: white;
+    height: 80px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+
+  .notification-holder{
+    color: $greyColor;
+    border: 2px solid;
+  }
+
+  .upload-holder{
+    background-color: $skyBlue;
+    color: white;
+  }
+}
+
+.suggestions-wrapper{
+  padding: 0 12px;
+  margin-top: 25px;
+
+}
+
+.suggestions-text-row{
+  margin-bottom: 20px;
+
+  .suggestion-col{
+    text-align: left;
+  }
+
+  .see-all-col{
+    text-align: right;
+    color: $cofeedColor;
+  }
+}
+
+
+// MEDIA QEURIES
+
+@media (max-width: 1791px){
+
+}
+
+
+@media (max-width: 1679px){
+  .main{
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .notification-col {
+
+    justify-content: space-around;
+    padding: 0;
+    div{
+      height: 81px;
+      width: 43%;
+    }
+  }
+}
+
+@media (max-width: 1599px){
+  .main{
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .notification-col {
+
+    justify-content: space-around;
+    padding: 0;
+    div{
+      height: 77px;
+      width: 43%;
+    }
+  }
+}
+
+@media (max-width: 1535px) {
+  .main{
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .notification-col {
+
+    justify-content: space-around;
+    padding: 0;
+    div{
+      height: 72px;
+      width: 43%;
+    }
+  }
+}
+
+
+@media (max-width: 1439px) {
+
+  .main{
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .notification-col {
+
+    justify-content: space-around;
+    padding: 0;
+    div{
+      height: 59px;
+      width: 43%;
+    }
+  }
+
+
+}
+
+@media (max-width: 1365px) {
+
+
+  .main{
+    padding: 0;
+    padding-left: 15px;
+  }
+
+  .notification-col {
+
+    justify-content: space-around;
+    padding: 0;
+    div{
+      height: 64px;
+      width: 43%;
+    }
+  }
+
+}

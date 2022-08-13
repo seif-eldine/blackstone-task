@@ -1,0 +1,101 @@
+@import "../../../../styles/variables.scss";
+
+.row {
+  margin-bottom: 27px;
+
+  .img-col {
+    img {
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  }
+}
+
+.tagname {
+  color: $greyColor;
+}
+
+.name-and-tag-col{
+  font-size: 12px;
+}
+
+.btn-col {
+  text-align: right;
+}
+
+.follow-btn {
+  padding: 5px 25px;
+}
+
+.follow {
+  background-color: $cofeedColor;
+  color: white;
+}
+
+.unfollow {
+  background-color: $lightGreyColor;
+  color: black;
+}
+
+// MEDIA QEURIES
+
+@media (max-width: 1791px){
+
+}
+
+
+@media (max-width: 1679px){
+
+}
+
+@media (max-width: 1599px){
+  .row{
+    div{
+      padding: 0;
+    }
+  }
+
+  .follow-btn{
+    padding: 4px 16px;
+  }
+}
+
+@media (max-width: 1535px) {
+  .row{
+    div{
+      padding: 0;
+    }
+  }
+
+  .follow-btn{
+    padding: 4px 16px;
+  }
+}
+
+
+@media (max-width: 1439px) {
+  .row{
+    div{
+      padding: 0;
+    }
+  }
+
+  .follow-btn{
+    padding: 3px 8px;
+  }
+}
+
+@media (max-width: 1365px) {
+
+  .row{
+    div{
+      padding: 0;
+    }
+  }
+
+  .follow-btn{
+    padding: 3px 8px;
+  }
+}

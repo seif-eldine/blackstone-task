@@ -1,0 +1,32 @@
+<div class="main">
+  <div class="row brand cofeedColor">
+    <div class="col-4 img-col">
+      <img src="assets/imgs/logo.png" />
+    </div>
+
+    <div class="col text-col">
+      <p>C<span>o</span>feed</p>
+    </div>
+  </div>
+
+  <div class="menu-title">
+    <p>Menu</p>
+  </div>
+
+  <div class="links-holder">
+    <ul>
+      <li *ngFor="let linkItem of linksArr">
+        <div class="icon-text-holder" (click)="navTo(linkItem.link)">
+          <a
+            routerLink="{{ linkItem.link }}"
+            routerLinkActive="active"
+            [routerLinkActiveOptions]="{ exact: true }"
+          >
+            <mat-icon>{{ linkItem.icon }}</mat-icon>
+            <span>{{ linkItem.title }}</span>
+          </a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>

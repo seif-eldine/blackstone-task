@@ -1,0 +1,22 @@
+<div class="main">
+  <app-users-list [usersList]="usersList"></app-users-list>
+
+  <div class="liner"></div> <!-- To draw a custom line-->
+
+  <div class="row filter-row">
+    <div class="col-7">
+      <p>Feeds</p>
+    </div>
+
+    <div class="col filter-option" (click)="setFilter('all')" [ngClass]="{'active-filter': currentFilter === 'all'}">All</div>
+    <div class="col filter-option" (click)="setFilter('following')" [ngClass]="{'active-filter': currentFilter === 'following'}">Following</div>
+    <div class="col filter-option" (click)="setFilter('newest')" [ngClass]="{'active-filter': currentFilter === 'newest'}">Newest</div>
+    <div class="col filter-option" (click)="setFilter('popular')" [ngClass]="{'active-filter': currentFilter === 'popular'}">Popular</div>
+  </div>
+
+  <div class="row feeds-row">
+    <div class="col-6 feed-col" *ngFor="let feed of feedsList">
+      <app-feeds-card [feedObject]="feed"></app-feeds-card>
+    </div>
+  </div>
+</div>

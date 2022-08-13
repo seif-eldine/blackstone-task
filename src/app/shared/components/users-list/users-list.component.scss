@@ -1,0 +1,125 @@
+
+@import'../../../../styles/variables.scss';
+
+.account-holder{
+
+  .img-container{
+    padding: 5px;
+    border: 1px solid $cofeedColor;
+    border-radius: 50%;
+
+    .img-div{
+      height: 120px;
+      // width: 120px;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      border-radius: 50%;
+    }
+  }
+
+  img{
+    width: 100%;
+    border-radius: 50%;
+  }
+
+  p{
+    text-align: center;
+    margin-top: 8px;
+  }
+}
+
+// MEDIA QEURIES
+
+@media (max-width: 1791px){
+
+}
+
+
+@media (max-width: 1679px){
+
+  .account-holder{
+
+    .img-container{
+
+      .img-div{
+        height: 95px;
+      }
+    }
+
+  }
+}
+
+@media (max-width: 1599px){
+
+  .account-holder{
+
+    .img-container{
+
+      .img-div{
+        height: 90px;
+      }
+    }
+
+  }
+
+}
+
+@media (max-width: 1535px) {
+
+
+  .account-holder{
+
+    .img-container{
+
+      .img-div{
+        height: 82px;
+      }
+    }
+
+  }
+
+}
+
+
+@media (max-width: 1439px) {
+
+  .account-holder{
+
+    .img-container{
+
+      .img-div{
+        height: 76px;
+
+      }
+    }
+
+    p{
+      text-align: center;
+      margin-top: 8px;
+      font-size: 13px;
+    }
+  }
+
+
+}
+
+@media (max-width: 1367px) {
+
+  .account-holder{
+
+    .img-container{
+
+      .img-div{
+        height: 68px;
+      }
+    }
+
+    p{
+      text-align: center;
+      margin-top: 8px;
+      font-size: 13px;
+    }
+  }
+
+}

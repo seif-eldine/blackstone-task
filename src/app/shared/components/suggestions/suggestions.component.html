@@ -1,0 +1,35 @@
+<div class="main">
+  <div class="row">
+
+    <div class="col-6 search-col">
+      <input type="text" placeholder="Search" />
+      <mat-icon>search</mat-icon>
+    </div>
+
+    <div class="col-6 notification-col">
+      <div class="notification-holder">
+        <mat-icon>notifications_active</mat-icon>
+      </div>
+
+      <div class="upload-holder">
+        <mat-icon>cloud_upload</mat-icon>
+      </div>
+    </div>
+  </div>
+
+  <div class="suggestions-wrapper">
+    <div class="row suggestions-text-row">
+      <div class="col-8 suggestion-col">
+        <p>Suggestions For You</p>
+      </div>
+      <div class="col see-all-col">
+        <p>See All</p>
+      </div>
+    </div>
+
+    <div class="div suggestions-row">
+      <app-account-row *ngFor="let suggestion of suggestionsList" [account]="suggestion"></app-account-row>
+    </div>
+
+  </div>
+</div>

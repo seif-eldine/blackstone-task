@@ -1,0 +1,45 @@
+
+@import'../../../../styles/variables.scss';
+
+.main{
+  *{
+    font-weight: bold;
+  }
+}
+
+.filter-row{
+  .col{
+    text-align: right;
+    color: $greyColor;
+  }
+}
+
+.feeds-row{
+  height: 700px;
+  overflow-y: auto;
+
+  .feed-col{
+    padding: 25px;
+
+  }
+}
+
+.filter-option{
+  cursor: pointer;
+
+  &:hover{
+    color: $skyBlue!important;
+  }
+}
+
+.active-filter{
+  color: $cofeedColor!important;
+}
+
+//Globals
+
+.liner{
+  height: 2px;
+  background-color: $greyColor;
+  margin: 20px 0;
+}
