@@ -80,12 +80,6 @@ export class FeedsService {
     },
   ];
 
-  // myPromise = new Promise((resolve, reject) => {
-  //   setTimeout(() => {
-  //     resolve(this.feedsList);
-  //   }, 300);
-  // });
-
   constructor() {}
 
   fetchFeeds(filter: string) {
